@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "9cfb11c4-fabf-4b44-881c-ef6e0fa8cba5",
+		"name": "Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20900081"
+	},
+	"item": [
+		{
+			"name": "Post New service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shortDescription\":{\n        \"icon\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/entypo_brush.svg\",\n        \"name\":\"UI & UX\",\n        \"briefDesc\":\"We analyze human behavioral patterns and blend them with data science and information architecture to design a unique blended experience'.\"\n    },\n    \"longDescription\":{\n        \"page1\":{\n            \"heading\": \"Insightful Design Solutions\",\n            \"shortDesc\":\"The specialist product design agency who help you uncover the best path forward. Scale new heights with engaging UX, world-class UI and expert guidance.\",\n            \"btnCTA\":\"Schedule a free consultaion now\",\n            \"bannerImg\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/design_banner.png\",\n            \"textBeforeIcons\":\"We work with\",\n            \"icons\":[\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/Adobe_XD-Logo+1.svg\",\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/AdobeAI.svg\",\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/figma_logo_icon_147289+1.svg\",\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/sketch.svg\",\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/Blender_logo_no_text+1.svg\"]\n\n        },\n        \"page2\":{\n            \"heading\":\"We keep our ear to the ground\",\n            \"para\":\"We start by listening and asking questions. All the information from your experience and environment before we can create something meaningful. We follow the UX process of asking, listening, prototyping and testing. We would love bringing your idea to life for any product or service that you need. We enjoy turning ideas into real products that people want to use!\",\n            \"bannerImg\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/Frame+1.svg\"\n                        \n        },\n        \"page3\":{\n            \"heading\":\"Qualitative User Research For Better Products\",\n            \"para\":\"Innovation begins with understanding the problem, and more importantly, the users.Our guiding principle for User Research has been, “Research is to see what everybody else has seen and to think what nobody else has thought”.\",\n            \"bannerImg\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/Frame+2.svg\"\n                        \n        },\n        \"page4\":{\n            \"heading\":\"Professional Wire frames and Storyboards\",\n            \"para\":\"we develop a strong strategy that delights your end-users and makes them experience your brand in a new way. We're here to help you reach your goals. We'll work with you one-on-one with the best of our skills and expertise. Whether you're a new startup or an experienced company, we're ready to make a difference in your lives.\",\n            \"bannerImg\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/Frame+3.svg\"\n                        \n        },\n        \"page5\":{\n            \"heading\":\"Get Your Ideas, Concepts, and Visuals from Scribbles and Pixels\",\n            \"para\":\"Your product is everything. We're here to make sure that all aspects of the design process, from wireframes to the final product, are thought out and executed with perfection.We want to make sure that your UI & Visual Design stage is seamless and effortless.\",\n            \"bannerImg\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/Frame+4.svg\"\n                        \n        },\n        \"page6\":{\n            \"heading\":\"Testimoial\",\n            \"data\":[\n                {\n                    \"name\":\"Vince\",\n                    \"comments\":\"Wow lightning fast results! You guys exceeded my expectations. Thanks FLD team\",\n                    \"img\":\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/vince.webp\"\n                }\n            ]\n\n        },\n        \"page7\":{\n            \"heading\":\"Our Work\",\n            \"card\":[{\n                \"title\":\"Aggregate Marketplace for Farmers\",\n                \"desc\":\"Aggregate Supply & Demand App Design 50+ screens, Mindmap, UX & UI in just 4 days\",\n                \"images\":[\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/card1-1.png\",\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/card1-2.png\"]\n            },\n            {\n                \"title\":\"Noudada\",\n                \"desc\":\"Home away from home, an app that serves university student home food in Palo Alto & Los Angeles. turnaround in 2 weeks UX UI design\",\n                \"images\":[\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/card2-1.png\",\"https://s3.us-west-2.amazonaws.com/fastlanedevs.com/images/service1/card2-2.png\"]\n\n            }\n            ]\n        }\n            \n                        \n        \n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/v1/service",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Services page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/V1/sd",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"V1",
+						"sd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/V1/sld/63d5aad33cbee1846d0090cd",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"V1",
+						"sld",
+						"63d5aad33cbee1846d0090cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit A service",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"shortDescription\":{\n        \"icon\":\"test2\",\n        \"name\":\"MVP\",\n        \"briefDesc\":\"test\"\n    },\n    \"longDescription\":{\n        \"page1\":{\n            \"heading\": \"TEst\",\n            \"shortDesc\":\"String\",\n            \"btnCTA\":\"String\",\n            \"bannerImg\":\"String\",\n            \"textBeforeIcons\":\"String\",\n            \"icons\":[\"String\",\"test\"]\n\n        },\n        \"page2\":{\n            \"heading\":\"String\",\n            \"para\":\"String\",\n            \"bannerImg\":\"String\"\n                        \n        },\n        \"page3\":{\n            \"heading\":\"String\",\n            \"para\":\"String\",\n            \"bannerImg\":\"String\"\n                        \n        },\n        \"page4\":{\n            \"heading\":\"String\",\n            \"para\":\"String\",\n            \"bannerImg\":\"String\"\n                        \n        },\n        \"page5\":{\n            \"heading\":\"String\",\n            \"card\":{\n                \"title\":\"String\",\n                \"desc\":\"String\",\n                \"images\":[\"String\"]\n            }}\n            \n                        \n        \n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/V1/service/63d594e1c64c4ecf81052860",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"V1",
+						"service",
+						"63d594e1c64c4ecf81052860"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Service",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/V1/service/63d594e1c64c4ecf81052860",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"V1",
+						"service",
+						"63d594e1c64c4ecf81052860"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
